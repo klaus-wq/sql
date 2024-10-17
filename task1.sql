@@ -14,5 +14,3 @@
 8. Employees относится к Territories, как многие ко многим посредством EmployeeTerritories.
 Один сотрудник может относится ко многим территориям. Одна территория может быть отнесена ко многим сотрудникам.
 В EmployeeTerritories - пара EmployeeID - TerritoryID.
-
-9. CustomerCustomerDemo имеет отношение многие ко многим. Пара CustomerID - CustomerTypeID.
