@@ -1,0 +1,3 @@
+1. SELECT Products.ProductName, Categories.CategoryName FROM Products, Categories WHERE Products.CategoryID = Categories.CategoryID;
+2. SELECT Products.UnitPrice, Products.ProductName FROM Products, [Order Details] WHERE Products.ProductID = [Order Details].ProductID AND [Order Details].UnitPrice < 20;
+3. SELECT Products.UnitPrice, Products.ProductName, Categories.CategoryName FROM Products, [Order Details], Categories WHERE Products.ProductID = [Order Details].ProductID AND Products.CategoryID = Categories.CategoryID AND [Order Details].UnitPrice < 20;
