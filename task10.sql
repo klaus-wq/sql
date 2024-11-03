@@ -6,4 +6,7 @@ WHERE Orders.CustomerID is NULL;
 FROM Customers
 UNION
 SELECT 'Supplier' As Type, ContactName, City, Country
-FROM Suppliers;
+FROM Suppliers
+ORDER BY Type;
+
+2-не учла сортировку
