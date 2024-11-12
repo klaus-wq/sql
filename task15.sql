@@ -1,3 +1,3 @@
-CREATE INDEX idxTerritoryIndex ON Territories(TerritoryID);
+CREATE INDEX idxTerritoryID ON Territories(TerritoryID);
 
-CREATE INDEX idxRegionIndex ON Region(RegionID);
+CREATE INDEX idxRegionID ON Region(RegionID);
