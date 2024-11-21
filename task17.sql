@@ -22,3 +22,10 @@ WHERE Squads.name = 'Guardians';
 6. SELECT Dwarves.dwarf_id, Dwarves.name, Relationships.related_to, Dwarves.name, Relationships.relationship
 FROM Relationships
 INNER JOIN Dwarves ON Relationships.related_to = Dwarves.dwarf_id;
+
+1-верно
+2-верно
+3-не использовала DISTINCT
+4-сделала с INNER JOIN, можно без
+5-верно
+6-неверно, нужно добавить еще один INNER JOIN
