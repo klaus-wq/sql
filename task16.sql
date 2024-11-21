@@ -43,3 +43,14 @@ FROM Dwarves
 FULL JOIN Items ON Dwarves.dwarf_id = Items.owner_id
 WHERE Dwarves.age > (SELECT AVG(Dwarves.age) FROM Dwarves)
 AND Items.owner_id is NULL;
+
+1-правильно, но вывожу лишние данные
+2-правильно, но вывожу лишние данные
+3-правильно, но вывожу лишние данные
+4-правильно, но нужно выводить ещё имя и профессию.
+5-неправильно, нужно было использовать LEFT JOIN и выводить имя.
+6-правильно, но нужно добавить  ORDER BY tasks_count DESC.
+7-правильно
+8-неправильно совсем
+
+Вывод: нужно повторить тему с JOIN.
