@@ -26,6 +26,6 @@ INNER JOIN Dwarves ON Relationships.related_to = Dwarves.dwarf_id;
 1-верно
 2-верно
 3-не использовала DISTINCT
-4-сделала с INNER JOIN, можно без
+4-можно убрать INNER
 5-верно
 6-неверно, нужно добавить еще один INNER JOIN
