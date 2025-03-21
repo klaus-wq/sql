@@ -4,7 +4,7 @@
 	d.age,
 	d.profession,
 	JSON_OBJECT(
-	   'skill_ids',(
+		'skill_ids',(
 	       SELECT JSON_ARRAYAGG(ds.skill_id)
 	       FROM  dwarf_skills ds
 	       WHERE d.dwarf_id = ds.dwarf_id
@@ -25,7 +25,8 @@
 	       WHERE d.dwarf_id = de.dwarf_id
 	   )
    ) AS related_entities
-FROM dwarves d;
+FROM
+	dwarves d;
 
 3. SELECT
 	w.workshop_id,
