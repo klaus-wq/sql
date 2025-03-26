@@ -7,7 +7,7 @@ SELECT
 			FROM expedition_members em
 			WHERE em.expedition_id = exp.expedition_id
 		) AS survival_rate,
-        (
+		(
 			SELECT COUNT(ea.value)
 			FROM expedition_artifacts ea
 			WHERE ea.expedition_id = exp.expedition_id
