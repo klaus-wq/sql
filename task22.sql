@@ -16,7 +16,7 @@ WITH workshops_general_stats AS (
         workshop_products wp ON w.workshop_id = wp.workshop_id
     LEFT JOIN 
         workshop_materials wm ON w.workshop_id = wm.workshop_id
-	LEFT JOIN
+    LEFT JOIN
 		products p ON wp.product_id = p.product_id
     GROUP BY 
         w.workshop_id, w.name, w.type, w.quality
